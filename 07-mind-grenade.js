@@ -6,3 +6,5 @@ function addValues() {
 }
 
 addValues();
+
+//while it's recommended to explicitly export values using module.exports or exports, Node.js allows you to access functions and variables defined in the module scope even if you don't explicitly export them.
