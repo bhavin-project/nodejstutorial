@@ -30,11 +30,12 @@ app.get("/api/products/:productID", (req, res) => {
 
 app.get("/api/products/:productID/reviews/:reviewID", (req, res) => {
   console.log(req.params);
+  console.log(req.params.productID);
   res.send("hello world");
 });
 
 app.get("/api/v1/query", (req, res) => {
-  // console.log(req.query)
+  console.log(req.query);
   const { search, limit } = req.query;
   let sortedProducts = [...products];
 
@@ -50,7 +51,8 @@ app.get("/api/v1/query", (req, res) => {
     // res.status(200).send('no products matched your search');
     return res.status(200).json({ sucess: true, data: [] });
   }
-  res.status(200).json(sortedProducts);
+  //localhost:5000/api/v1/query?search=al&limit=3
+  http: res.status(200).json(sortedProducts);
 });
 
 app.listen(5000, () => {
