@@ -7,7 +7,8 @@ const {
   createPersonPostman,
   updatePerson,
   deletePerson,
-} = require("../controllers/people");
+  // } = require("../controllers/people");
+} = require("./15-router-controller");
 
 // router.get('/', getPeople)
 // router.post('/', createPerson)

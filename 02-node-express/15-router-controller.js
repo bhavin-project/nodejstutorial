@@ -1,4 +1,4 @@
-let { people } = require("../data");
+let { people } = require("./data");
 
 const getPeople = (req, res) => {
   res.status(200).json({ success: true, data: people });
@@ -6,6 +6,7 @@ const getPeople = (req, res) => {
 
 const createPerson = (req, res) => {
   const { name } = req.body;
+  console.log(`name is ${name}`);
   if (!name) {
     return res
       .status(400)
