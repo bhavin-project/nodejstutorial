@@ -16,12 +16,13 @@ const createPerson = (req, res) => {
 };
 
 const createPersonPostman = (req, res) => {
-  const { name } = req.body;
+  const { id, name } = req.body;
   if (!name) {
     return res
       .status(400)
       .json({ success: false, msg: "please provide name value" });
   }
+  // const setD = { id, name };
   res.status(201).send({ success: true, data: [...people, name] });
 };
 

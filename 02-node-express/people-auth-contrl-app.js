@@ -1,9 +1,10 @@
 const express = require("express");
-// const { people1 } = require("./data");
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.json());
+// do with and without
 const people1 = require("./13-router-people");
 app.use("/api/people/", people1);
 
