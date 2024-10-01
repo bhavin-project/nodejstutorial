@@ -1,0 +1,6 @@
+# With database name connection string ---- test2
+MONGOURI = mongodb+srv://root123:root123@cluster0.aiuz4zq.mongodb.net/test2?retryWrites=true&w=majority&appName=Cluster0
+PORT = 4000    
+
+# default connection string
+# MONGOURI = mongodb+srv://root123:root123@cluster0.aiuz4zq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
