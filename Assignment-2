@@ -1,0 +1,18 @@
+ 1. Discuss how Express.js enhances the capabilities of Node.js for building web applications. What are some advantages of using Express over the built-in HTTP module?
+  
+  2. What are some common use cases for middleware in an Express application? Provide examples of how middleware can be used for tasks like authentication, logging, and error handling.
+  
+  3. Setting Up a Basic Express Server
+Create a simple Express server that listens on port 3000 and responds with "Hello World!" when accessed at the root URL (/).
+  
+  4. Discuss how different HTTP methods (GET, POST, PUT, DELETE) correspond to CRUD operations. Provide examples of how each method would be used in a typical RESTful API scenario.
+  
+  5.Describe How express.static Works and Its Use Cases.
+What is express.static, and how does it help serve static files? Discuss scenarios where serving static assets directly from your server is beneficial.
+
+6. Analyze the Role of Query Parameters and Route Parameters in API Design.
+Compare and contrast query parameters (req.query) and route parameters (req.params). When should each be used, and what are their implications for API design?
+
+7. What is Express Router? Give the practical example demonstrating how to use the Express Router.
+
+8. Explain below terms:-route, app.use(), express.urlencoded, express.json() using example.
